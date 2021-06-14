@@ -38,6 +38,38 @@ namespace StackAndQueue
                 Console.Write(n.data + "\n");
             }
         }
+        public void Pop()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+            }
+            else
+            {
+                Console.WriteLine(top.data + " popped from Stack");
+                top = top.next;
+            }
+        }
+        public void Peak()
+        {
+            if (top == null)
+            {
+                Console.WriteLine("Stack is Empty");
+            }
+            else
+            {
+                Console.WriteLine(top.data + " is at top of Stack");
+            }
+        }
+        public void IsEmpty()
+        {
+            while (top != null)
+            {
+                Peak();
+                Pop();
+            }
+            Console.WriteLine("Stack is empty now.");
+        }
 
 
     }
