@@ -68,7 +68,7 @@ namespace StackAndQueue
                 Peak();
                 Pop();
             }
-            Console.WriteLine("Stack is empty now.");
+            Console.WriteLine("Now the Stack is empty");
         }
 
 
