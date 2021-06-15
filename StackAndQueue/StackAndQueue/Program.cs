@@ -21,6 +21,9 @@ namespace StackAndQueue
             queue.QueueCreation(30);
             queue.QueueCreation(70);
             queue.Display();
+            queue.Dequeue();
+            queue.Display();
+
         }
     }
 }
